@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Cyber-Space Theme Colors */
+  --bg-primary: #05050a;
+  --bg-secondary: rgba(255, 255, 255, 0.02);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  
+  --accent-cyan: #00f2fe;
+  --accent-purple: #7b2cbf;
+  
+  /* Glowing Variables */
+  --glow-cyan: rgba(0, 242, 254, 0.4);
+  --glow-purple: rgba(123, 44, 191, 0.4);
+  
+  /* Subtle Glass Variables */
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-hover: var(--accent-cyan);
+  
+  /* Layout */
+  --max-width: 1200px;
+  --section-padding: 4rem 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.4) 100%, transparent),
+    radial-gradient(1px 1px at 40% 60%, rgba(255,255,255,0.4) 100%, transparent),
+    radial-gradient(1px 1px at 80% 10%, rgba(255,255,255,0.4) 100%, transparent),
+    radial-gradient(2px 2px at 90% 80%, rgba(255,255,255,0.3) 100%, transparent),
+    radial-gradient(1px 1px at 30% 90%, rgba(255,255,255,0.4) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 60% 40%, rgba(255,255,255,0.5) 100%, transparent);
+  background-size: 200px 200px; /* Repeating starfield effect */
+  animation: starDrift 60s linear infinite;
+}
+
+@keyframes starDrift {
+  0% {
+    background-position: 
+      0 0, 
+      0 0, 
+      0 0, 
+      0 0, 
+      0 0, 
+      0 0;
+  }
+  100% {
+    background-position: 
+      -200px 200px, 
+      -400px 400px, 
+      -300px 300px, 
+      -100px 100px, 
+      -500px 500px, 
+      -200px 200px;
+  }
+}
+
+/* Spotlights */
+.spotlight-top {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  height: 80vw;
+  max-width: 1000px;
+  max-height: 1000px;
+  background: radial-gradient(circle, rgba(0, 242, 254, 0.08) 0%, rgba(123, 44, 191, 0.05) 40%, rgba(5, 5, 10, 0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Typography Utilities */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.heading-xl {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.heading-lg {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 1.5rem;
+}
+
+.text-lead {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.text-accent {
+  color: var(--accent-cyan);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: var(--section-padding);
+  position: relative;
+}
+
+/* Sleek Glass Panel */
+.glass-panel {
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+.glass-panel:hover {
+  border-color: rgba(0, 242, 254, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 242, 254, 0.1);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 25px rgba(123, 44, 191, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+}
+
+.btn-outline:hover {
+  background: rgba(0, 242, 254, 0.1);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Utilities */
+.mt-2 { margin-top: 2rem; }
+.text-center { text-align: center; }
+.text-secondary { color: var(--text-secondary); }
+
+/* Global Mobile Adjustments */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 3rem 1.2rem;
+  }
+  
+  .glass-panel {
+    padding: 1.5rem;
+  }
+  
+  .heading-xl {
+    font-size: clamp(2.5rem, 8vw, 3rem);
+  }
+  
+  .heading-lg {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+}
