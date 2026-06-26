@@ -1,16 +1,15 @@
-# Nagendra Sutliya - Personal Portfolio
+# 🌌 Nagendra Sutliya - Cyber-Space Portfolio
 
-A modern, dynamic, and fully responsive personal portfolio website built with React, Vite, and custom CSS glassmorphism. This portfolio showcases my projects, experience, and skills as a Database & Full-Stack Developer.
+A premium, high-performance personal portfolio website built with React, TypeScript, and Vite. This portfolio showcases my 7+ years of experience in Database Administration and Full-Stack Engineering, packaged in a highly interactive, modern "Cyber-Space" aesthetic.
 
-![Portfolio Preview](./public/nagendra.jpeg) <!-- Note: Replace with actual screenshot of the portfolio when uploaded -->
+## 🚀 Key Aesthetic & Technical Features
 
-## 🚀 Features
-
-- **Modern Glassmorphism UI**: High-end translucent elements, blur filters, and fluid gradients.
-- **Dynamic Micro-animations**: Smooth entry animations, scroll tracking, and hover interactions.
-- **Fully Responsive**: Flawless layout on desktop, tablet, and mobile viewing.
-- **Component-Driven**: Built cleanly using React Functional Components and TypeScript.
-- **SEO Optimized Architecture**: semantic HTML structure with fast loading times via Vite.
+- **Cyber-Space Theme**: A dark-mode aesthetic featuring deep space radial backgrounds, pulsing cyan/purple accents, and floating starfield animations.
+- **Bento Box Grids**: Advanced CSS Grid structures for the "About" and "Projects" sections, presenting complex information in a digestible, asymmetrical dashboard format.
+- **3D Hexagon Hero**: A custom CSS `clip-path` profile portrait that dynamically pops out and scales upon hover.
+- **Interactive Timelines**: A sleek vertical Experience timeline featuring pulsing neon nodes and glassmorphism hover transitions.
+- **Modern Glassmorphism**: High-end translucent elements and blur filters (`backdrop-filter: blur(12px)`) across all cards and navigation components.
+- **Fully Responsive**: Meticulously optimized with `clamp()` typography and CSS media queries for flawless layout on desktop, tablet, and mobile viewing.
 
 ## 🛠️ Technology Stack
 
