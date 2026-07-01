@@ -146,6 +146,7 @@
   object-fit: cover;
   /* Push the image down so the head isn't chopped off by the top point of the hexagon */
   transform: scale(1) translateY(8%);
+  transform-origin: bottom center;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -155,8 +156,9 @@
 }
 
 .hexagon-wrapper:hover img {
-  /* Scale up and pull it upwards to pop out of the top */
-  transform: scale(1.) translateY(-10%);
+  /* Fix typo: scale(1.) -> scale(1.1) */
+  /* Keep translateY positive or 0 to prevent the bottom edge from lifting up too high */
+  transform: scale(1.1) translateY(0%);
 }
 
 @media (max-width: 1024px) {
