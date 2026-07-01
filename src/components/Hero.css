@@ -141,24 +141,23 @@
 }
 
 .hexagon-image img {
-  width: 110%;
-  height: 110%;
+  width: 115%;
+  height: 115%;
   object-fit: cover;
-  /* Push the image down so the head isn't chopped off by the top point of the hexagon */
-  transform: scale(1) translateY(8%);
+  /* Push down slightly to frame the face properly in the base state */
+  transform: translateY(5%);
   transform-origin: bottom center;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* On hover, open the top vertices of the clip-path and scale/translate the image up */
+/* On hover, open the top vertices of the clip-path just enough to let the head out */
 .hexagon-wrapper:hover .hexagon-image {
-  clip-path: polygon(50% -40%, 130% -20%, 100% 75%, 50% 100%, 0% 75%, -30% -20%);
+  clip-path: polygon(50% -15%, 115% -5%, 100% 75%, 50% 100%, 0% 75%, -15% -5%);
 }
 
 .hexagon-wrapper:hover img {
-  /* Fix typo: scale(1.) -> scale(1.1) */
-  /* Keep translateY positive or 0 to prevent the bottom edge from lifting up too high */
-  transform: scale(1.1) translateY(0%);
+  /* Scale upwards from the bottom. Maintain the 5% translateY so the bottom never lifts up! */
+  transform: scale(1.08) translateY(5%);
 }
 
 @media (max-width: 1024px) {
