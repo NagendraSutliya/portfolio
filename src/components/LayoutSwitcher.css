@@ -1,0 +1,65 @@
+.layout-switcher {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: rgba(9, 9, 11, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeUp 1s ease forwards;
+}
+
+.switcher-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+  padding-left: 1rem;
+}
+
+.switcher-buttons {
+  display: flex;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 0.25rem;
+}
+
+.switcher-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.switcher-btn:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.switcher-btn.active {
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+}
+
+@media (max-width: 768px) {
+  .layout-switcher {
+    bottom: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

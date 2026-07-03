@@ -1,27 +1,20 @@
-
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { useState } from 'react';
+import LayoutSwitcher, { type LayoutMode } from './components/LayoutSwitcher';
+import ClassicLayout from './layouts/ClassicLayout';
+import DashboardLayout from './layouts/DashboardLayout';
+import './App.css';
 
 function App() {
-  return (
-    <div className="app-container">
-      <div className="spotlight-top"></div>
-      <Navbar />
-      
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
+  const [layoutMode, setLayoutMode] = useState<LayoutMode>('classic');
 
-      <Footer />
+  return (
+    <div className={`app-container mode-${layoutMode}`}>
+      <div className="spotlight-top"></div>
+      
+      <LayoutSwitcher currentMode={layoutMode} setMode={setLayoutMode} />
+
+      {layoutMode === 'classic' && <ClassicLayout />}
+      {layoutMode === 'dashboard' && <DashboardLayout />}
     </div>
   );
 }

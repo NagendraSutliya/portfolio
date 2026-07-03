@@ -16,6 +16,7 @@
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(12px);
+  cursor: pointer;
 }
 
 .project-featured {

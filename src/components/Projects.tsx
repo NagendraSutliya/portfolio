@@ -69,6 +69,14 @@ const Projects: React.FC = () => {
     }
   ];
 
+  const handleCardClick = (live: string, github: string) => {
+    if (live && live !== "#") {
+      window.open(live, "_blank", "noreferrer");
+    } else if (github && github !== "#") {
+      window.open(github, "_blank", "noreferrer");
+    }
+  };
+
   return (
     <section id="projects" className="section">
       <div className="container">
@@ -85,13 +93,14 @@ const Projects: React.FC = () => {
               key={index} 
               className={`glass-panel project-card animate-fade-up ${index % 3 === 0 ? 'project-featured' : ''}`}
               style={{ animationDelay: `${0.1 * (index + 1)}s` }}
+              onClick={() => handleCardClick(project.live, project.github)}
             >
               <div className="project-content">
                 <div className="project-header">
                   <h3>{project.title}</h3>
                   <div className="project-links">
-                    <a href={project.github} target="_blank" rel="noreferrer"><FiGithub size={20}/></a>
-                    <a href={project.live} target="_blank" rel="noreferrer"><FiExternalLink size={20}/></a>
+                    <a href={project.github} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}><FiGithub size={20}/></a>
+                    <a href={project.live} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}><FiExternalLink size={20}/></a>
                   </div>
                 </div>
                 <p className="text-secondary project-desc">{project.description}</p>

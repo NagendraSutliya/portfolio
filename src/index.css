@@ -230,3 +230,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: clamp(2rem, 6vw, 2.5rem);
   }
 }
+
+/* Layout Mode Overrides */
+.mode-dashboard .section {
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+.mode-dashboard .hero-section {
+  padding-top: 0 !important;
+  min-height: auto !important;
+}
