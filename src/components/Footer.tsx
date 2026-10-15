@@ -1,11 +1,11 @@
-
+import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer style={{ padding: '2rem 0', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-      <div className="container">
-        <p className="text-secondary" style={{ fontSize: '0.9rem' }}>
-          &copy; {new Date().getFullYear()} Nagendra Sutliya. Built with React & Vite.
+    <footer className="py-8 text-center border-t border-white/[0.05]">
+      <div className="max-w-[1200px] mx-auto px-6">
+        <p className="text-[#9ca3af] text-sm">
+          &copy; {new Date().getFullYear()} Nagendra Sutliya. Built with React &amp; Tailwind CSS.
         </p>
       </div>
     </footer>

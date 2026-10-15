@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nagendra Kumar Sutliya — Data Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B1030}
+a{color:#E8ECFF}a:hover{color:#FFB86B}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #8B9CFF;outline-offset:3px}
+@keyframes blink{50%{opacity:0}}
+.cursor{animation:blink 1s steps(1) infinite}
+@media (prefers-reduced-motion: reduce){.cursor{animation:none}}
+</style>
+</head>
+<body>
+<div style="background: #0B1030; color: #E8ECFF; font-family: 'Geist', 'Segoe UI', sans-serif; min-height: 100vh">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 24px 32px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
+<a href="index.html" style="font-family: 'Unbounded', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; letter-spacing: -0.01em">nagendra<span style="color: #FFB86B">.</span>sutliya</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px; align-items: center">
+<a href="#experience" style="padding: 12px 14px; text-decoration: none; font-size: 15px">Experience</a>
+<a href="#projects" style="padding: 12px 14px; text-decoration: none; font-size: 15px">Projects</a>
+<a href="#skills" style="padding: 12px 14px; text-decoration: none; font-size: 15px">Skills</a>
+<a href="journey.html" style="padding: 12px 14px; text-decoration: none; font-size: 15px">Journey</a>
+<a href="#contact" style="margin-left: 8px; padding: 12px 18px; text-decoration: none; font-size: 15px; font-weight: 600; border: 1px solid #FFB86B; color: #FFB86B; border-radius: 999px">Download résumé</a>
+</nav>
+</header>
+
+<section style="background-image: linear-gradient(#18225A 1px, transparent 1px), linear-gradient(90deg, #18225A 1px, transparent 1px); background-size: 56px 56px; background-position: center top; border-bottom: 1px solid #2A3678">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 32px 104px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px; background: #131B47; border: 1px solid #2A3678; font-size: 14px; color: #A3AEDB"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #6EE7B7"></span>Software Engineer at Sunfocus Solutions</p>
+<h1 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(40px, 5.6vw, 76px); line-height: 1.02; letter-spacing: -0.035em">I make data fast, correct and easy to trust.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #A3AEDB; max-width: 32em">I'm Nagendra Kumar Sutliya, a database and data engineer from Jaipur. Seven years building MySQL, PostgreSQL and analytics systems — after three and a half years teaching engineering students.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#projects" style="padding: 15px 24px; border-radius: 999px; background: #FFB86B; color: #0B1030; font-weight: 600; text-decoration: none">See my projects</a>
+<a href="#contact" style="padding: 15px 24px; border-radius: 999px; border: 1px solid #2A3678; background: #131B47; color: #E8ECFF; font-weight: 600; text-decoration: none">Get in touch</a>
+</div>
+</div>
+
+<div style="background: #070A22; border: 1px solid #2A3678; border-radius: 20px; box-shadow: 0 0 0 6px #10184A, 0 30px 80px #04061A; overflow: hidden">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px; border-bottom: 1px solid #1E2862; background: #0D1338">
+<div style="display: flex; gap: 8px" aria-hidden="true">
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #2A3678"></span>
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #2A3678"></span>
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #2A3678"></span>
+</div>
+<span style="font-family: 'Geist Mono', monospace; font-size: 13px; color: #A3AEDB">mysql&gt; nagendra</span>
+</div>
+<div style="padding: 18px 18px 0; display: flex; flex-wrap: wrap; gap: 8px" id="chips" role="group" aria-label="Run a query">
+</div>
+<div style="padding: 20px 22px 24px; font-family: 'Geist Mono', monospace; font-size: 14px; line-height: 1.7; overflow-x: auto">
+<div id="sql" style="color: #8B9CFF; white-space: pre-wrap"></div>
+<div style="margin-top: 16px; min-width: 460px; border: 1px solid #1E2862; border-radius: 10px; overflow: hidden">
+<div id="head" style="display: grid; grid-template-columns: 1.1fr 1.2fr 1fr; gap: 12px; padding: 10px 14px; background: #10184A; color: #A3AEDB">
+</div>
+<div id="rows"></div>
+</div>
+<div style="margin-top: 14px; color: #A3AEDB"><span id="foot"></span> <span class="cursor" aria-hidden="true" style="color: #FFB86B">▍</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-label="Career timeline" style="max-width: 1240px; margin: 0 auto; padding: 72px 32px 32px">
+<h2 style="margin: 0 0 28px; font-family: 'Unbounded', sans-serif; font-weight: 600; font-size: 22px">Ten years, one thread: data</h2>
+<div style="overflow-x: auto">
+<div style="min-width: 760px; display: flex; gap: 6px">
+<div style="flex: 3.5 1 0; display: flex; flex-direction: column; gap: 12px"><div style="height: 14px; border-radius: 999px; background: #8B9CFF"></div><p style="margin: 0; font-weight: 600">Assistant Professor</p><p style="margin: 0; font-size: 14px; color: #A3AEDB">Arya College, Jaipur<br>2016 – 2019</p></div>
+<div style="flex: 3.6 1 0; display: flex; flex-direction: column; gap: 12px"><div style="height: 14px; border-radius: 999px; background: #6F7FE8"></div><p style="margin: 0; font-weight: 600">Software Engineer</p><p style="margin: 0; font-size: 14px; color: #A3AEDB">Tibil Solutions, Bengaluru<br>2019 – 2023</p></div>
+<div style="flex: 3 1 0; display: flex; flex-direction: column; gap: 12px"><div style="height: 14px; border-radius: 999px; background: #5262CC"></div><p style="margin: 0; font-weight: 600">Database Administrator</p><p style="margin: 0; font-size: 14px; color: #A3AEDB">Wits Infotech, Mohali<br>2023 – 2026</p></div>
+<div style="flex: 1.4 1 0; min-width: 150px; display: flex; flex-direction: column; gap: 12px"><div style="height: 14px; border-radius: 999px; background: #FFB86B"></div><p style="margin: 0; font-weight: 600">Software Engineer</p><p style="margin: 0; font-size: 14px; color: #A3AEDB">Sunfocus, Mohali<br>2026 – now</p></div>
+</div>
+</div>
+</section>
+
+<section id="experience" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 64px; display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 54px); letter-spacing: -0.03em">Experience</h2>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #2A3678">
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 32px 0; border-bottom: 1px solid #2A3678">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #FFB86B">Feb 2026 – Present</p><h3 style="margin: 0; font-size: 22px; font-weight: 600">Sunfocus Solutions</h3><p style="margin: 0; color: #A3AEDB">Software Engineer, Mohali</p></div>
+<p style="flex: 2 1 420px; margin: 0; color: #C9D1F5; line-height: 1.7">Building the KPI layer of datacube.ai, a business-intelligence platform. I write the SQL for new KPIs, tune stored procedures and indexes, and run reconciliation checks so every dashboard number holds up.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 32px 0; border-bottom: 1px solid #2A3678">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #8B9CFF">Feb 2023 – Jan 2026</p><h3 style="margin: 0; font-size: 22px; font-weight: 600">Wits Infotech</h3><p style="margin: 0; color: #A3AEDB">Database Administrator, Mohali</p></div>
+<p style="flex: 2 1 420px; margin: 0; color: #C9D1F5; line-height: 1.7">Owned MySQL schemas for three high-volume products — a marketing platform, an energy-comparison site and a social app. Designed ER diagrams, wrote procedures, triggers and events, and migrated data across test, staging and production without losing a row.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 32px 0; border-bottom: 1px solid #2A3678">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #8B9CFF">Jun 2019 – Jan 2023</p><h3 style="margin: 0; font-size: 22px; font-weight: 600">Tibil Solutions</h3><p style="margin: 0; color: #A3AEDB">Software Engineer, Bengaluru</p></div>
+<p style="flex: 2 1 420px; margin: 0; color: #C9D1F5; line-height: 1.7">Analysed telemetry for EkStep–Diksha, a national learning platform, with PySpark on Linux: daily funnels, weekly retention and content-consumption reports, plus shell-script validation.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 32px 0; border-bottom: 1px solid #2A3678">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #8B9CFF">Jan 2016 – Jun 2019</p><h3 style="margin: 0; font-size: 22px; font-weight: 600">Arya College of Engineering &amp; IT</h3><p style="margin: 0; color: #A3AEDB">Assistant Professor, Jaipur</p></div>
+<p style="flex: 2 1 420px; margin: 0; color: #C9D1F5; line-height: 1.7">Taught computer-science students for three and a half years. It's where I learned to explain a complex system simply — a skill I now use in every schema review and handover. <a href="journey.html" style="color: #FFB86B">Read the full story</a></p>
+</div>
+
+</div>
+</section>
+
+<section id="projects" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 64px; display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 54px); letter-spacing: -0.03em">Projects</h2>
+
+<a href="case-study.html" style="text-decoration: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 0; border-radius: 24px; overflow: hidden; border: 1px solid #2A3678; background: #131B47">
+<div style="padding: clamp(28px, 4vw, 48px); display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-size: 15px; color: #FFB86B; font-weight: 500">Featured · Sunfocus Solutions · 2026</p>
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-size: clamp(30px, 3.4vw, 46px); font-weight: 800; letter-spacing: -0.03em">datacube.ai</h3>
+<p style="margin: 0; color: #C9D1F5; line-height: 1.7; font-size: 17px">A BI platform that consolidates company data and turns it into live KPIs. I own the SQL behind the numbers — custom KPIs, optimised procedures, and the validation that keeps them consistent.</p>
+<p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #A3AEDB">MySQL, stored procedures, triggers, indexing</p>
+<span style="margin-top: 8px; align-self: flex-start; padding: 13px 20px; border-radius: 999px; background: #FFB86B; color: #0B1030; font-weight: 600">Read the case study</span>
+</div>
+<div style="min-height: 320px; background: #070A22; border-left: 1px solid #2A3678; padding: 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto 1fr; gap: 14px">
+<div style="grid-column: span 2; height: 18px; width: 40%; border-radius: 6px; background: #18225A"></div>
+<div style="border-radius: 14px; background: #10184A; border: 1px solid #1E2862; display: flex; align-items: end; gap: 8px; padding: 18px" aria-hidden="true">
+<span style="flex: 1; height: 40%; background: #5262CC; border-radius: 4px"></span><span style="flex: 1; height: 65%; background: #6F7FE8; border-radius: 4px"></span><span style="flex: 1; height: 52%; background: #8B9CFF; border-radius: 4px"></span><span style="flex: 1; height: 88%; background: #FFB86B; border-radius: 4px"></span>
+</div>
+<div style="border-radius: 14px; background: #10184A; border: 1px solid #1E2862; display: flex; align-items: center; justify-content: center; color: #A3AEDB; font-family: 'Geist Mono', monospace; font-size: 13px; text-align: center; padding: 12px">[Swap in a blurred dashboard screenshot]</div>
+</div>
+</a>
+
+<div style="display: flex; flex-direction: column; border-top: 1px solid #2A3678">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #2A3678; align-items: baseline">
+<h3 style="flex: 1 1 200px; margin: 0; font-size: 21px; font-weight: 600">Ad Leverage</h3>
+<p style="flex: 3 1 360px; margin: 0; color: #C9D1F5; line-height: 1.6">Schema design and query tuning for a digital-marketing platform handling high-volume campaign and transaction data.</p>
+<p style="flex: 1 1 200px; margin: 0; font-family: 'Geist Mono', monospace; font-size: 13px; color: #A3AEDB">MySQL · 2025</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #2A3678; align-items: baseline">
+<h3 style="flex: 1 1 200px; margin: 0; font-size: 21px; font-weight: 600">Cimet</h3>
+<p style="flex: 3 1 360px; margin: 0; color: #C9D1F5; line-height: 1.6">Energy-comparison platform. Automated data migrations across dev, staging and production with reconciliation checks.</p>
+<p style="flex: 1 1 200px; margin: 0; font-family: 'Geist Mono', monospace; font-size: 13px; color: #A3AEDB">MySQL · 2024</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #2A3678; align-items: baseline">
+<h3 style="flex: 1 1 200px; margin: 0; font-size: 21px; font-weight: 600">MySocially</h3>
+<p style="flex: 3 1 360px; margin: 0; color: #C9D1F5; line-height: 1.6">Social-engagement app. Designed ER and data-flow diagrams, built the schema, and ran migrations from test to production.</p>
+<p style="flex: 1 1 200px; margin: 0; font-family: 'Geist Mono', monospace; font-size: 13px; color: #A3AEDB">MySQL, dbForge · 2023–24</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #2A3678; align-items: baseline">
+<h3 style="flex: 1 1 200px; margin: 0; font-size: 21px; font-weight: 600">EkStep–Diksha</h3>
+<p style="flex: 3 1 360px; margin: 0; color: #C9D1F5; line-height: 1.6">Telemetry analysis of clicks, logins and language settings to understand how learners use the app and portal.</p>
+<p style="flex: 1 1 200px; margin: 0; font-family: 'Geist Mono', monospace; font-size: 13px; color: #A3AEDB">PySpark, Linux · 2020–23</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #2A3678; align-items: baseline">
+<h3 style="flex: 1 1 200px; margin: 0; font-size: 21px; font-weight: 600"><a href="https://crmdost.com" style="text-decoration: underline; text-decoration-color: #2A3678; text-underline-offset: 6px">crmdost.com</a></h3>
+<p style="flex: 3 1 360px; margin: 0; color: #C9D1F5; line-height: 1.6">A responsive business CRM website with reusable React components, forms and modals — live in production.</p>
+<p style="flex: 1 1 200px; margin: 0; font-family: 'Geist Mono', monospace; font-size: 13px; color: #A3AEDB">React, Tailwind · 2025</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #2A3678; align-items: baseline">
+<h3 style="flex: 1 1 200px; margin: 0; font-size: 21px; font-weight: 600">Full-stack web app</h3>
+<p style="flex: 3 1 360px; margin: 0; color: #C9D1F5; line-height: 1.6">A proof-of-concept built for scale: React and Tailwind on the front, GraphQL and MongoDB behind it. In progress.</p>
+<p style="flex: 1 1 200px; margin: 0; font-family: 'Geist Mono', monospace; font-size: 13px; color: #A3AEDB">GraphQL, MongoDB · 2025–</p>
+</div>
+</div>
+</section>
+
+<section id="skills" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 64px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 54px); letter-spacing: -0.03em">My stack, as a schema</h2>
+<p style="margin: 0 0 24px; color: #A3AEDB; font-size: 18px">Each table is a part of the job. The rows are what I use for it.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px; font-family: 'Geist Mono', monospace; font-size: 14px">
+<div style="border: 1px solid #2A3678; border-radius: 12px; overflow: hidden; background: #0E1440"><p style="margin: 0; padding: 12px 16px; background: #FFB86B; color: #0B1030; font-weight: 500">databases</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">MySQL</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">PostgreSQL</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">MongoDB</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">Query tuning, indexing</p></div>
+<div style="border: 1px solid #2A3678; border-radius: 12px; overflow: hidden; background: #0E1440"><p style="margin: 0; padding: 12px 16px; background: #8B9CFF; color: #0B1030; font-weight: 500">data_analysis</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">Python, PySpark</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">Pandas</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">Apache Superset</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">Excel</p></div>
+<div style="border: 1px solid #2A3678; border-radius: 12px; overflow: hidden; background: #0E1440"><p style="margin: 0; padding: 12px 16px; background: #8B9CFF; color: #0B1030; font-weight: 500">web</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">React.js, JavaScript</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">Tailwind CSS, Bootstrap</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">Node.js, GraphQL</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">HTML5, CSS3, jQuery</p></div>
+<div style="border: 1px solid #2A3678; border-radius: 12px; overflow: hidden; background: #0E1440"><p style="margin: 0; padding: 12px 16px; background: #8B9CFF; color: #0B1030; font-weight: 500">tools</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">MySQL Workbench</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">dbForge, Redgate Compare</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">Git, GitHub, GitLab</p><p style="margin: 0; padding: 10px 16px; border-top: 1px solid #1E2862">Linux, Shell, Postman</p></div>
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 64px 32px">
+<div style="border-radius: 24px; background: #E8ECFF; color: #0B1030; padding: clamp(32px, 5vw, 64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 40px; align-items: center">
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(28px, 3.4vw, 44px); line-height: 1.08; letter-spacing: -0.03em">I taught before I engineered. It shows in the work.</h2>
+<div style="display: flex; flex-direction: column; gap: 18px; font-size: 17px; line-height: 1.65; color: #26306B">
+<p style="margin: 0">Schemas come with ER diagrams. Migrations come with validation reports. Handovers come with documentation the next person can actually follow.</p>
+<p style="margin: 0">Three and a half years in front of a classroom made clear explanation a habit, not an extra.</p>
+</div>
+</div>
+</section>
+
+<section aria-label="Education" style="max-width: 1240px; margin: 0 auto; padding: 64px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px">
+<div style="padding: 28px; border-radius: 16px; border: 1px solid #2A3678; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #8B9CFF">2013 – 2015</p><h3 style="margin: 0; font-size: 22px; font-weight: 600">M.Tech, Computer Science</h3><p style="margin: 0; color: #A3AEDB">Manipal University, Jaipur</p></div>
+<div style="padding: 28px; border-radius: 16px; border: 1px solid #2A3678; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 14px; color: #8B9CFF">2008 – 2012</p><h3 style="margin: 0; font-size: 22px; font-weight: 600">B.Tech, Information Technology</h3><p style="margin: 0; color: #A3AEDB">RITM (RTU Kota), Jaipur</p></div>
+</section>
+
+<section id="contact" style="border-top: 1px solid #2A3678; background-image: linear-gradient(#18225A 1px, transparent 1px), linear-gradient(90deg, #18225A 1px, transparent 1px); background-size: 56px 56px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 104px 32px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 68px); line-height: 1.0; letter-spacing: -0.035em">Have slow queries or messy data? Let's talk.</h2>
+<p style="margin: 0; color: #A3AEDB; font-size: 18px; line-height: 1.6">Open to database, data-engineering and analytics roles. Based in Jaipur, happy to work remotely.</p>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 18px">
+<a href="mailto:nagendrasutliya@gmail.com" style="padding: 10px 0; align-self: flex-start">nagendrasutliya@gmail.com</a>
+<a href="tel:+918741000303" style="padding: 10px 0; align-self: flex-start">+91 87410 00303</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<a href="https://www.linkedin.com" style="padding: 12px 18px; border-radius: 999px; border: 1px solid #2A3678; background: #131B47; text-decoration: none">LinkedIn</a>
+<a href="https://github.com" style="padding: 12px 18px; border-radius: 999px; border: 1px solid #2A3678; background: #131B47; text-decoration: none">GitHub</a>
+<a href="#contact" style="padding: 12px 18px; border-radius: 999px; background: #FFB86B; color: #0B1030; font-weight: 600; text-decoration: none">Download résumé</a>
+</div>
+</div>
+<form style="background: #131B47; border: 1px solid #2A3678; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 500">Your name<input type="text" autocomplete="name" style="min-height: 48px; padding: 0 16px; border-radius: 12px; border: 1px solid #2A3678; background: #0B1030; color: #E8ECFF; font: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 500">Email<input type="email" autocomplete="email" style="min-height: 48px; padding: 0 16px; border-radius: 12px; border: 1px solid #2A3678; background: #0B1030; color: #E8ECFF; font: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 500">What are you working on?<textarea rows="5" style="padding: 14px 16px; border-radius: 12px; border: 1px solid #2A3678; background: #0B1030; color: #E8ECFF; font: inherit; resize: vertical"></textarea></label>
+<button type="button" style="min-height: 52px; border: 0; border-radius: 999px; background: #FFB86B; color: #0B1030; font: inherit; font-weight: 600; cursor: pointer">Send message</button>
+</form>
+</div>
+</section>
+
+<footer style="max-width: 1240px; margin: 0 auto; padding: 28px 32px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: 14px; color: #A3AEDB">
+<span>© 2026 Nagendra Kumar Sutliya</span>
+<span>Jaipur, India</span>
+</footer>
+
+</div>
+<script>
+const accent = '#FFB86B';
+const data = {
+  exp:{label:'Experience',sql:'SELECT role, company, period\nFROM experience ORDER BY started DESC;',cols:['role','company','period'],rows:[['Software Engineer','Sunfocus Solutions','2026 – now'],['Database Admin','Wits Infotech','2023 – 2026'],['Software Engineer','Tibil Solutions','2019 – 2023'],['Asst. Professor','Arya College','2016 – 2019']]},
+  proj:{label:'Projects',sql:'SELECT name, domain, stack\nFROM projects LIMIT 5;',cols:['name','domain','stack'],rows:[['datacube.ai','BI & KPIs','MySQL'],['Ad Leverage','Ad tech','MySQL'],['Cimet','Energy','MySQL'],['MySocially','Social','MySQL'],['EkStep–Diksha','EdTech','PySpark']]},
+  stack:{label:'Stack',sql:'SELECT area, daily, also\nFROM stack;',cols:['area','daily','also'],rows:[['Databases','MySQL, PostgreSQL','MongoDB'],['Data','Python, PySpark','Superset'],['Web','React, Tailwind','GraphQL'],['Tools','Workbench, dbForge','Git']]},
+  edu:{label:'Education',sql:'SELECT degree, institute, years\nFROM education;',cols:['degree','institute','years'],rows:[['M.Tech, CS','Manipal University','2013 – 2015'],['B.Tech, IT','RITM (RTU Kota)','2008 – 2012']]}
+};
+const base = "min-height:44px;padding:0 16px;border-radius:999px;font-family:'Geist Mono',monospace;font-size:13px;cursor:pointer;";
+const rowStyle = 'display:grid;grid-template-columns:1.1fr 1.2fr 1fr;gap:12px;padding:10px 14px;border-top:1px solid #1E2862;color:#E8ECFF';
+function cell(t, color){ const s=document.createElement('span'); s.textContent=t; if(color) s.style.color=color; return s; }
+function run(key){
+  const cur = data[key];
+  document.querySelectorAll('#chips button').forEach(b=>{
+    const on = b.dataset.k===key;
+    b.setAttribute('aria-pressed', on);
+    b.style.cssText = base + (on ? `background:${accent};color:#0B1030;border:1px solid ${accent}` : 'background:#10184A;color:#C9D1F5;border:1px solid #2A3678');
+  });
+  document.getElementById('sql').textContent = 'mysql> ' + cur.sql;
+  const head = document.getElementById('head'); head.replaceChildren(...cur.cols.map(c=>cell(c)));
+  const rows = document.getElementById('rows'); rows.replaceChildren(...cur.rows.map(r=>{
+    const d=document.createElement('div'); d.style.cssText=rowStyle;
+    d.append(cell(r[0]), cell(r[1],'#C9D1F5'), cell(r[2],accent)); return d;
+  }));
+  document.getElementById('foot').textContent = cur.rows.length + ' rows in set (0.00 sec)';
+}
+const chips = document.getElementById('chips');
+Object.keys(data).forEach(k=>{ const b=document.createElement('button'); b.type='button'; b.dataset.k=k; b.textContent=data[k].label; b.onclick=()=>run(k); chips.append(b); });
+run('exp');
+</script>
+</body>
+</html>
